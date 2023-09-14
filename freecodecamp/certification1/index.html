@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Certification</title>
+  </head>
+  <body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">Please fill out this survey for us</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">
+          First name:
+          <input type="text" id="name" placeholder="Toni" required />
+        </label>
+        <label for="email" id="email-label">
+          email:
+          <input
+            type="email"
+            id="email"
+            placeholder="test@gmail.com"
+            required
+          />
+        </label>
+        <label for="number" id="number-label">
+          Age:
+          <input type="number" id="number" min="12" max="99" placeholder="18" />
+        </label>
+        <label>
+          Dropdown :
+          <select id="dropdown">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </label>
+        <label>
+          Are you:
+          <label for="radio1"
+            ><input
+              type="radio"
+              id="radio1"
+              name="radio"
+              value="male"
+            />Male</label
+          >
+          <label for="radio2"
+            ><input
+              type="radio"
+              id="radio2"
+              name="radio"
+              value="female"
+            />Female</label
+          >
+          <label for="radio2"
+            ><input
+              type="radio"
+              id="radio2"
+              name="radio"
+              value="unknown"
+              checked
+            />Prefer not to say</label
+          >
+        </label>
+        <h2>Select your activites :</h2>
+        <label>
+          <input type="checkbox" id="checkbox1" name="check" value="games" />
+          Videogames
+        </label>
+        <label>
+          <input type="checkbox" id="checkbox2" name="check" value="coding " />
+          Coding
+        </label>
+        <label for="comment" class="comment-label">
+          Leave us a comment :
+          <textarea id="comment" row="3" cols="20">
+              Leave comment here
+            </textarea
+          >
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
